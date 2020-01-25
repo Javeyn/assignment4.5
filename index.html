@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <title>Weather</title>
+</head>
+
+<body>
+  <header>
+    <h1>Your five day forcast</h1>
+  </header>
+<div id="bigbox">
+  <div class="main">
+    <div class="row">
+      <div id="search-column">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <h3>Find your city here:</h3>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" id="user-input" class="form-control">
+              <div class="input-group-append">
+                <button id='search-button' class="btn btn-outline-secondary" type="button">Search</button>
+              </div>
+            </div>
+            <div id="favorite-cities-here"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <div class="card-body ml-4">
+            <div class="row current-data">
+              <p id="main-city"></p><img id="icon-image" src="" alt="">
+              <h5 id="temperature"></h5>
+              <h5 id="humidity"></h5>
+              <h5 id="wind-speed"></h5>
+              <h5 id="current-conditions"></h5>
+              <h1 id="spacer"></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="five-day-data-here">
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="moment.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
